@@ -1,0 +1,66 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "lab-01-routing",
+    "collectionId": "9719e91d-1125-4249-ae3e-aab6ec4faeda",
+    "dateExported": "2026-09-19T20:17:50.705Z",
+    "version": "1.4",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d56abef5-0e1f-4187-9450-1ab8d21855cb",
+            "colId": "9719e91d-1125-4249-ae3e-aab6ec4faeda",
+            "containerId": "",
+            "name": "status",
+            "url": "http://127.0.0.1:5000/api/status",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2026-09-19T20:10:49.008Z",
+            "modified": "2026-09-19T20:10:49.008Z",
+            "headers": []
+        },
+        {
+            "_id": "e9d8c0f2-4bdd-4664-9213-ae1f82942012",
+            "colId": "9719e91d-1125-4249-ae3e-aab6ec4faeda",
+            "containerId": "",
+            "name": "items",
+            "url": "http://127.0.0.1:5000/api/items",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2026-09-19T20:11:14.689Z",
+            "modified": "2026-09-19T20:11:14.689Z",
+            "headers": []
+        },
+        {
+            "_id": "e4a8262f-88d4-454c-9c37-b49b9fc04a44",
+            "colId": "9719e91d-1125-4249-ae3e-aab6ec4faeda",
+            "containerId": "",
+            "name": "items 99",
+            "url": "http://127.0.0.1:5000/api/items/99",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2026-09-19T20:11:47.521Z",
+            "modified": "2026-09-19T20:11:47.521Z",
+            "headers": []
+        },
+        {
+            "_id": "e3ce4454-4865-4632-8364-3779e36f43fd",
+            "colId": "9719e91d-1125-4249-ae3e-aab6ec4faeda",
+            "containerId": "",
+            "name": "create",
+            "url": "http://127.0.0.1:5000/api/items",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2026-09-19T20:12:28.004Z",
+            "modified": "2026-09-19T20:12:28.004Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\"title\":\"NewBook\"}"
+                ],
+                "form": []
+            }
+        }
+    ],
+    "ref": "sYcxSzy5lu0Lauj5HlAwTYyK6hAbey4LabmEnu3zTpsIdJJHLDcA5ckJ5lG0IN3Yv42uhwLyKi01Fwiiszf8pg"
+}
