@@ -1,0 +1,142 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "lab-03-orm",
+    "collectionId": "40fcd9b2-ec1b-4c62-8586-7271602c60ad",
+    "dateExported": "2026-10-31T23:08:00.007Z",
+    "version": "1.4",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "fb76ca06-1a21-4c3b-8c33-d0fe344123b5",
+            "colId": "40fcd9b2-ec1b-4c62-8586-7271602c60ad",
+            "containerId": "",
+            "name": "Create Department",
+            "url": "http://127.0.0.1:5000/api/departments",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2026-10-31T22:40:31.877Z",
+            "modified": "2026-10-31T22:40:31.878Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\"name\":\"Engineering\",\"location\":\"Dallas\"}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "978fb698-1164-4045-b4b4-c0863ac80838",
+            "colId": "40fcd9b2-ec1b-4c62-8586-7271602c60ad",
+            "containerId": "",
+            "name": "Duplicate Department",
+            "url": "http://127.0.0.1:5000/api/departments",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2026-10-31T22:44:24.595Z",
+            "modified": "2026-10-31T22:44:24.595Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\"name\":\"Engineering\",\"location\":\"Dallas\"}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "0ce94c8c-1285-4c27-be8a-1f43557f4270",
+            "colId": "40fcd9b2-ec1b-4c62-8586-7271602c60ad",
+            "containerId": "",
+            "name": "Add Employee To Department",
+            "url": "http://127.0.0.1:5000/api/departments/1/employees",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2026-10-31T22:45:17.448Z",
+            "modified": "2026-10-31T22:45:17.448Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\"name\":\"Viktor Constantine\", \"email\":\"vik@example.com\", \"role\":\"Engineer\"}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "42070a03-48b3-4309-ad2c-77ba37960971",
+            "colId": "40fcd9b2-ec1b-4c62-8586-7271602c60ad",
+            "containerId": "",
+            "name": "Duplicate Email",
+            "url": "http://127.0.0.1:5000/api/departments/1/employees",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2026-10-31T22:49:11.917Z",
+            "modified": "2026-10-31T22:49:11.917Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\"name\":\"Jayce Constantine\", \"email\":\"vik@example.com\", \"role\":\"Engineer\"}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "4cf7103d-ceda-4b98-a9eb-46cfdaa39860",
+            "colId": "40fcd9b2-ec1b-4c62-8586-7271602c60ad",
+            "containerId": "",
+            "name": "Non-existent Department",
+            "url": "http://127.0.0.1:5000/api/departments/99/employees",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2026-10-31T22:50:03.313Z",
+            "modified": "2026-10-31T22:50:03.313Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\"name\":\"Mel Hopper\", \"email\":\"mel@example.com\", \"role\":\"Engineer\"}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "3589c672-7fc5-4b69-8ad6-a1124a917534",
+            "colId": "40fcd9b2-ec1b-4c62-8586-7271602c60ad",
+            "containerId": "",
+            "name": "Department With Employees",
+            "url": "http://127.0.0.1:5000/api/departments/1",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2026-10-31T22:51:28.222Z",
+            "modified": "2026-10-31T22:51:28.222Z",
+            "headers": []
+        },
+        {
+            "_id": "b414d5b6-3374-469b-bb8c-9820a25fedb3",
+            "colId": "40fcd9b2-ec1b-4c62-8586-7271602c60ad",
+            "containerId": "",
+            "name": "Delete",
+            "url": "http://127.0.0.1:5000/api/departments/1",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2026-10-31T23:06:37.822Z",
+            "modified": "2026-10-31T23:06:37.822Z",
+            "headers": []
+        },
+        {
+            "_id": "113409d8-a5ac-4d5b-8eae-bd0cf434b43e",
+            "colId": "40fcd9b2-ec1b-4c62-8586-7271602c60ad",
+            "containerId": "",
+            "name": "Get Employee (Gone)",
+            "url": "http://127.0.0.1:5000/api/departments/1",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2026-10-31T23:07:07.143Z",
+            "modified": "2026-10-31T23:07:07.143Z",
+            "headers": []
+        }
+    ],
+    "ref": "qP1GppbGs-PT3eXi7QJ62De31rcky0bYlFgU3Ry3ZODLn2Tgmr1yi4J5yGxR-Pmlhc_aCNKX1cB0I3AqB_Ydlg"
+}

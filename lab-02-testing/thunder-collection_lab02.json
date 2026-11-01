@@ -1,0 +1,130 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "lab-02-testing",
+    "collectionId": "a9a29ee8-6365-4cd9-a9e7-853939c6b555",
+    "dateExported": "2026-09-30T23:01:50.044Z",
+    "version": "1.4",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "ff4ec1e4-0079-4028-ad91-e5e53887eb7f",
+            "colId": "a9a29ee8-6365-4cd9-a9e7-853939c6b555",
+            "containerId": "",
+            "name": "gettasksfiltered",
+            "url": "http://127.0.0.1:5000/api/tasks?priority=high",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2026-09-30T22:49:59.781Z",
+            "modified": "2026-09-30T22:49:59.781Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "priority",
+                    "value": "high",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "45fed5bf-ae95-4e75-ae08-6f78b644ef44",
+            "colId": "a9a29ee8-6365-4cd9-a9e7-853939c6b555",
+            "containerId": "",
+            "name": "createvalidtask",
+            "url": "http://127.0.0.1:5000/api/tasks",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2026-09-30T22:50:36.860Z",
+            "modified": "2026-09-30T22:50:36.860Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\"title\":\"Test Task\", \"priority\":\"medium\", \"completed\":false, \"due_date\":\"2026-10-01\"}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "28652163-05e6-46d6-aa34-330934724cd0",
+            "colId": "a9a29ee8-6365-4cd9-a9e7-853939c6b555",
+            "containerId": "",
+            "name": "createtaskwithmissingpriority",
+            "url": "http://127.0.0.1:5000/api/tasks",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2026-09-30T22:56:23.715Z",
+            "modified": "2026-09-30T22:56:23.715Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\"title\":\"Missing Priority\"}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "629d646a-f104-4af4-9929-494505ad1962",
+            "colId": "a9a29ee8-6365-4cd9-a9e7-853939c6b555",
+            "containerId": "",
+            "name": "createtaskwithinvalidpriority",
+            "url": "http://127.0.0.1:5000/api/tasks",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2026-09-30T22:58:00.132Z",
+            "modified": "2026-09-30T22:58:00.134Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\"title\":\"Bad Priority\", \"priority\":\"urgent\"}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "7049cb07-bea0-4698-b2f5-a6bd71310333",
+            "colId": "a9a29ee8-6365-4cd9-a9e7-853939c6b555",
+            "containerId": "",
+            "name": "updatevalidtask",
+            "url": "http://127.0.0.1:5000/api/tasks/1",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2026-09-30T22:59:10.045Z",
+            "modified": "2026-09-30T22:59:10.045Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\"title\":\"Update Proposal\", \"priority\":\"low\", \"completed\":true, \"due_date\":\"2026-10-05\"}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "532c2f90-5841-4fba-918a-f94a7f1eb9f6",
+            "colId": "a9a29ee8-6365-4cd9-a9e7-853939c6b555",
+            "containerId": "",
+            "name": "deletetask",
+            "url": "http://127.0.0.1:5000/api/tasks/2",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2026-09-30T23:00:57.352Z",
+            "modified": "2026-09-30T23:00:57.352Z",
+            "headers": []
+        },
+        {
+            "_id": "8c0ede03-b867-4ca9-8c0e-83b0cc114dd8",
+            "colId": "a9a29ee8-6365-4cd9-a9e7-853939c6b555",
+            "containerId": "",
+            "name": "verifydeletedtask",
+            "url": "http://127.0.0.1:5000/api/tasks/2",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2026-09-30T23:01:27.751Z",
+            "modified": "2026-09-30T23:01:27.751Z",
+            "headers": []
+        }
+    ],
+    "ref": "vVJhwBV653VJKE1gsyUjhHiZaULdWyR8t5YcssCmDz_cdRdkDQ-4Qcd6pMlKGUAv-zv2100oM1NAvBCDaPRoTQ"
+}
