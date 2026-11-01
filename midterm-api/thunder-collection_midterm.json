@@ -1,0 +1,235 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "midterm-api",
+    "collectionId": "aa085f15-737b-4d7b-8d5e-f2c5e758c136",
+    "dateExported": "2026-11-01T00:42:34.223Z",
+    "version": "1.4",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "07805f0f-7865-4683-8ed8-50acd5eda2b2",
+            "colId": "aa085f15-737b-4d7b-8d5e-f2c5e758c136",
+            "containerId": "",
+            "name": "category  - list all - 200",
+            "url": "http://127.0.0.1:5000/api/v1/categories",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2026-11-01T00:21:08.654Z",
+            "modified": "2026-11-01T00:21:08.654Z",
+            "headers": []
+        },
+        {
+            "_id": "47853be5-2551-4f3c-acaa-b6bef41f8a6e",
+            "colId": "aa085f15-737b-4d7b-8d5e-f2c5e758c136",
+            "containerId": "",
+            "name": "category - get one with items - 200",
+            "url": "http://127.0.0.1:5000/api/v1/categories/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2026-11-01T00:22:40.111Z",
+            "modified": "2026-11-01T00:22:40.111Z",
+            "headers": []
+        },
+        {
+            "_id": "e4a1d489-600e-48b7-b5de-8b2d9469fe8b",
+            "colId": "aa085f15-737b-4d7b-8d5e-f2c5e758c136",
+            "containerId": "",
+            "name": "category  - create - 201",
+            "url": "http://127.0.0.1:5000/api/v1/categories",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2026-11-01T00:23:13.372Z",
+            "modified": "2026-11-01T00:23:13.372Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\"name\": \"Toys\", \"description\": \"Games and Toys\"}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "a51bc055-13ea-4534-b112-1e2cda9c17c4",
+            "colId": "aa085f15-737b-4d7b-8d5e-f2c5e758c136",
+            "containerId": "",
+            "name": "category  - duplicate name - 409",
+            "url": "http://127.0.0.1:5000/api/v1/categories",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2026-11-01T00:24:26.654Z",
+            "modified": "2026-11-01T00:24:26.654Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\"name\": \"Toys\"}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "f94ba428-7ca4-4fde-9609-bf078ab834a4",
+            "colId": "aa085f15-737b-4d7b-8d5e-f2c5e758c136",
+            "containerId": "",
+            "name": "category - update - 200",
+            "url": "http://127.0.0.1:5000/api/v1/categories/4",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2026-11-01T00:25:26.701Z",
+            "modified": "2026-11-01T00:25:26.702Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\"description\": \"Games, puzzles and toys\"}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "26bd43b7-60a8-43fe-8475-edd1a4813b44",
+            "colId": "aa085f15-737b-4d7b-8d5e-f2c5e758c136",
+            "containerId": "",
+            "name": "items - filter by category id - 200",
+            "url": "http://127.0.0.1:5000/api/v1/items?category_id=1",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2026-11-01T00:27:01.319Z",
+            "modified": "2026-11-01T00:27:01.319Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "category_id",
+                    "value": "1",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "4943d301-290d-48b6-b99f-ee5e6caf9d24",
+            "colId": "aa085f15-737b-4d7b-8d5e-f2c5e758c136",
+            "containerId": "",
+            "name": "items - get one - 200",
+            "url": "http://127.0.0.1:5000/api/v1/items/1",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2026-11-01T00:28:05.953Z",
+            "modified": "2026-11-01T00:28:05.953Z",
+            "headers": []
+        },
+        {
+            "_id": "8d06042c-c276-4e38-89c6-8d5f919418bc",
+            "colId": "aa085f15-737b-4d7b-8d5e-f2c5e758c136",
+            "containerId": "",
+            "name": "items - create - 201",
+            "url": "http://127.0.0.1:5000/api/v1/items",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2026-11-01T00:31:00.666Z",
+            "modified": "2026-11-01T00:31:00.666Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\"name\": \"Board Game\", \"sku\": \"BG-900\", \"price\": 34.5, \"quantity\": 10, \"category_id\": 4}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "3ce629c8-ba2a-4151-b02a-91630530ab84",
+            "colId": "aa085f15-737b-4d7b-8d5e-f2c5e758c136",
+            "containerId": "",
+            "name": "items - missing fields - 400",
+            "url": "http://127.0.0.1:5000/api/v1/items",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2026-11-01T00:32:59.141Z",
+            "modified": "2026-11-01T00:32:59.141Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\"name\": \"No SKU\"}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "cd7c8f6f-7f21-4147-afca-a707ba9439ff",
+            "colId": "aa085f15-737b-4d7b-8d5e-f2c5e758c136",
+            "containerId": "",
+            "name": "items - negative pricing - 422",
+            "url": "http://127.0.0.1:5000/api/v1/items",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2026-11-01T00:36:52.738Z",
+            "modified": "2026-11-01T00:36:52.738Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\"name\": \"Example\", \"sku\": \"BP-1\", \"price\":\"-1\", \"category_id\": 4}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "c7b4adb8-630c-47b2-a7b0-0e79fde7af64",
+            "colId": "aa085f15-737b-4d7b-8d5e-f2c5e758c136",
+            "containerId": "",
+            "name": "items - update  - 200",
+            "url": "http://127.0.0.1:5000/api/v1/items/9",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2026-11-01T00:38:33.520Z",
+            "modified": "2026-11-01T00:38:33.520Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\"price\": 29.99}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "590d70e2-87f6-4608-ba70-44c954a9d40f",
+            "colId": "aa085f15-737b-4d7b-8d5e-f2c5e758c136",
+            "containerId": "",
+            "name": "items - delete - 200",
+            "url": "http://127.0.0.1:5000/api/v1/items/9",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2026-11-01T00:39:36.259Z",
+            "modified": "2026-11-01T00:39:36.259Z",
+            "headers": []
+        },
+        {
+            "_id": "82bfb0f8-f5e1-49fd-851d-8d9b4a0bf510",
+            "colId": "aa085f15-737b-4d7b-8d5e-f2c5e758c136",
+            "containerId": "",
+            "name": "items - get deleted - 404",
+            "url": "http://127.0.0.1:5000/api/v1/items/9",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2026-11-01T00:40:17.966Z",
+            "modified": "2026-11-01T00:40:17.966Z",
+            "headers": []
+        },
+        {
+            "_id": "054e7e9d-3951-4ec1-bd8d-ad867200f406",
+            "colId": "aa085f15-737b-4d7b-8d5e-f2c5e758c136",
+            "containerId": "",
+            "name": "category - delete w/ cascade - 200",
+            "url": "http://127.0.0.1:5000/api/v1/categories/3",
+            "method": "DELETE",
+            "sortNum": 140000,
+            "created": "2026-11-01T00:40:54.933Z",
+            "modified": "2026-11-01T00:40:54.933Z",
+            "headers": []
+        }
+    ],
+    "ref": "ERxXnptvQEV6B6-8Cao5T0YIg17ONVKAlEHsYtSdghESx-wNzwLiR8d7_vdZ5HC8_YDxXTy7d1fhAuoy1QFIzg"
+}
